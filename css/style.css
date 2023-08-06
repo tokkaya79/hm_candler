@@ -116,6 +116,10 @@ button {
     line-height: 1.2;
 }
 
+.top__text:first-child {
+    margin-bottom: 15px;
+}
+
 .top__buy {
     padding: 18px 54px;
     background-color: #ffbd59;
@@ -127,6 +131,69 @@ button {
     position: absolute;
     left: 240px;
     top: 0;
+}
+
+.about {
+    background-color: #A5978E;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+}
+
+.about__content {
+    min-width: 370px;
+}
+
+.about__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about__text {
+    margin-bottom: 15px;
+}
+
+.about__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 50px 110px;
+    position: relative;
+}
+
+.about__list::before {
+    content: "";
+    background-image: url(../images/about/decor.svg);
+    position: absolute;
+    width: 24px;
+    height: 33px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+}
+
+.about__list::after {
+    content: "";
+    background-color: #7B6152;
+    position: absolute;
+    width: 908px;
+    height: 1px;
+    bottom: 13px;
+    left: 22px;
+}
+
+.about__item-img {
+    margin-bottom: 10px;
+}
+
+.about__item-text {
+    font-size: 10px;
 }
 
 .footer {
@@ -153,6 +220,23 @@ button {
     gap: 15px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
     .container {
         padding: 0 20px;
@@ -168,8 +252,19 @@ button {
     }
 
     .top__img {
-        max-width: 655px;
         left: 300px;
+    }
+
+    .top__img-big {
+        max-width: 655px;
+    }
+
+    .about__content {
+        min-width: 300px;
+    }
+
+    .about__list {
+        padding-left: 20px;
     }
 }
 
@@ -195,6 +290,7 @@ button {
 
     .container {
         max-width: 640px;
+        padding: 0 10px;
     }
 
     .phone::before {
@@ -221,11 +317,36 @@ button {
     .top__img {
         left: 180px;
     }
-}
 
-@media (max-width: 768px) {
-    .container {
-        padding: 0 10px;
+    .about__content {
+        min-width: 200px;
+    }
+
+    .about__list {
+        margin-left: 27px;
+        padding-bottom: 32px;
+        gap: 10px;
+    }
+
+    .about__title {
+        font-size: 15px;
+    }
+
+    .about__item-img {
+        margin-bottom: 6px;
+    }
+
+    .about__item-text {
+        font-size: 6px;
+    }
+
+    .about__item-img--1,
+    .about__item-img--3 {
+        width: 121px;
+    }
+
+    .about__item-img--2 {
+        width: 191px;
     }
 }
 
@@ -303,6 +424,25 @@ button {
         font-size: 10px;
         padding: 14px 41px;
     }
+
+    .about__content {
+        min-width: 172px;
+    }
+
+    .about__list {
+        margin-left: 17px;
+        padding-bottom: 50px;
+        gap: 5px;
+    }
+
+    .about__item-img--1,
+    .about__item-img--3 {
+        width: 80px;
+    }
+
+    .about__item-img--2 {
+        width: 140px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -324,6 +464,22 @@ button {
 
     .top__text {
         font-size: 10px;
+    }
+
+    .about__content {
+        min-width: 234px;
+    }
+
+    .about__list {
+        margin-left: 15px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }
+
+    .about__item-img--2,
+    .about__item-img--3,
+    .about__item-text {
+        display: none;
     }
 }
 
