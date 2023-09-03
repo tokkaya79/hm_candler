@@ -34,10 +34,17 @@ button {
 }
 
 .title {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-size: 40px;
     margin-bottom: 15px;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: normal;
+}
+.text {
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 .container {
@@ -144,13 +151,12 @@ button {
 }
 
 .top__title {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-size: 30px;
 }
 
 .top__text {
     margin: 15px 0 48px;
-    line-height: 1.2;
 }
 
 .top__text:first-child {
@@ -212,13 +218,10 @@ button {
 
 .section__content {
     display: grid;
+    gap: 50px 90px;
     grid-template-columns: auto auto;
     padding-bottom: 92px;
     padding-left: 80px;
-}
-
-.products__content {
-    gap: 50px 90px;
 }
 
 .product__item {
@@ -245,7 +248,7 @@ button {
 .product__item-title {
     margin-bottom: 16px;
     font-size: 16px;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-weight: 400;
 }
 
@@ -337,6 +340,43 @@ button {
     right: -14px;
     bottom: -13px;
 }
+.team {
+    background-color: #a5978e;
+    padding-top: 61px;
+    padding-bottom: 0;
+    margin-bottom: 150px;
+    color: #fff;
+}
+.team__item {
+    position: relative;
+}
+
+.team__info-box {
+    background-color: #7b6152;
+    color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 15px;
+    width: 60%;
+    height: 30%;
+    right: -50px;
+    box-sizing: content-box;
+    z-index: 4;
+}
+.team__name {
+    font-size: 12px;
+    font-family: 'Yeseva One';
+    letter-spacing: 1px;
+}
+.team__name-descr {
+    font-size: 11px;
+}
 
 /* -footer---------------------------- */
 .footer {
@@ -418,6 +458,9 @@ button {
         max-width: 130px;
         max-height: 225px;
     }
+    .team__info-box {
+        bottom: -19px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -451,6 +494,9 @@ button {
         padding: 15px 10px;
         right: -14px;
         bottom: -13px;
+    }
+    .team__content {
+        gap: 25px 70px;
     }
 }
 
@@ -523,7 +569,7 @@ button {
         grid-template-columns: 190px auto;
     }
 
-    .products__content {
+    .section__content {
         gap: 30px 16px;
     }
 
@@ -550,6 +596,22 @@ button {
     .steps__item img {
         max-width: 85px;
         max-height: 150px;
+    }
+    .team__name {
+        font-size: 8px;
+    }
+    .team__name-descr {
+        font-size: 7px;
+    }
+    .team__info-box {
+        padding: 10px 15px 11px;
+        width: 50%;
+        height: 30%;
+        right: -20px;
+    }
+    .team__img {
+        width: 143px;
+        height: 155px;
     }
 }
 
@@ -637,7 +699,6 @@ button {
 
     .top__text {
         font-size: 8px;
-        line-height: 1.2;
         margin-bottom: 15px;
     }
 
@@ -790,6 +851,23 @@ button {
 
     .course__price {
         padding: 19px 10px;
+    }
+    .team__content {
+        grid-template-columns: auto;
+    }
+    .team__item {
+        display: flex;
+    }
+
+    .team__img {
+        width: 205px;
+        height: 220px;
+    }
+    .team__name {
+        font-size: 11px;
+    }
+    .team__name-descr {
+        font-size: 10px;
     }
 }
 
