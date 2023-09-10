@@ -377,6 +377,77 @@ button {
 .team__name-descr {
     font-size: 11px;
 }
+.rewiews__content {
+    gap: 0;
+    padding-left: 20px;
+}
+.rewiews__slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.rewiews__video {
+    display: flex;
+    gap: 16px;
+}
+.rewiews__img-box {
+    position: relative;
+}
+.rewiews__img {
+    object-fit: cover;
+    width: 380px;
+    height: 370px;
+}
+
+.rewiews__img-box a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rewiews__video-content {
+    padding: 60px 0 13px 0;
+}
+.rewiews__video-link {
+    margin-bottom: 12px;
+}
+.rewiews__video-text {
+    margin-top: 15px;
+    margin-bottom: 37px;
+    line-height: 1.2;
+}
+.rewiew__video-btn {
+    margin-left: 90px;
+    text-align: right;
+}
+.rewiews__content .swiper-pagination {
+    bottom: 45px;
+}
+
+.swiper-pagination-bullet {
+    width: 53px;
+    height: 4px;
+    border-radius: 0;
+    background-color: #bea495;
+}
+
+.certificates__content {
+    gap: 0;
+    padding-left: 20px;
+    
+}
+.certificates__slider {
+    width: 875px;
+    overflow: hidden;
+}
+.certificates__img{
+    width: 375px;
+}
+
+.certificates__content .swiper-pagination {
+    bottom: 45px;
+}
 
 /* -footer---------------------------- */
 .footer {
@@ -402,7 +473,7 @@ button {
     display: flex;
     gap: 15px;
 }
-
+/* -------------media------------------- */
 @media (max-width: 1000px) {
     .container {
         padding: 0 20px;
@@ -461,6 +532,24 @@ button {
     .team__info-box {
         bottom: -19px;
     }
+    .rewiew__video-btn {
+        padding: 15px;
+        margin-left: 0;
+    }
+    .rewiews__img {
+        width: 270px;
+        height: 320px;
+    }
+    .rewiews__video-content {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .certificates__slider {
+        width: 650px;
+    }
+    .certificates__img {
+        width: 280px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -499,6 +588,29 @@ button {
         gap: 25px 70px;
     }
 }
+@media (max-width: 800px) {
+    .rewiew__video-btn {
+        padding: 15px;
+        margin-left: 0;
+    }
+    .rewiews__img {
+        width: 270px;
+        height: 320px;
+    }
+    .rewiews__video-content {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .certificates__slider {
+        width: 575px;
+    }
+    .certificates__img {
+        width: 250px;
+    }
+    .swiper-pagination-bullet{
+       width: 30px;
+    }
+}
 
 @media (max-width: 768px) {
     body {
@@ -508,6 +620,9 @@ button {
     .container {
         padding: 0 10px;
     }
+    .section{
+        padding-bottom: 80px;
+    }
 
     .phone::before {
         width: 14px;
@@ -515,6 +630,10 @@ button {
         left: -16px;
         top: -2px;
         background-size: cover;
+    }
+ 
+    .top{
+        padding-bottom: 80px;
     }
 
     .top__content {
@@ -533,6 +652,9 @@ button {
     .top__img {
         left: 180px;
     }
+    .about{
+        margin-bottom: 80px;
+    }
 
     .about__content {
         min-width: 200px;
@@ -540,7 +662,7 @@ button {
 
     .about__list {
         margin-left: 27px;
-        padding-bottom: 32px;
+        padding-bottom: 80px;
         gap: 10px;
     }
 
@@ -597,6 +719,12 @@ button {
         max-width: 85px;
         max-height: 150px;
     }
+    .team{
+        margin-bottom: 80px;
+    }
+    .team__content{
+        padding-bottom: 0;
+    }
     .team__name {
         font-size: 8px;
     }
@@ -613,6 +741,35 @@ button {
         width: 143px;
         height: 155px;
     }
+    .rewiews__img {
+        width: 200px;
+        height: 200px;
+    }
+    .rewiews__video-content {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .rewiews__content {
+        padding-bottom: 50px;
+    }
+    .rewiew__video-btn {
+        padding: 10px;
+        font-size: 11px;
+    }
+    .rewiews__video-text {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+    .rewiews__img-box a img {
+        width: 45px;
+    }
+    .certificates__img {
+        width: 200px;
+    }
+    .certificates__slider{
+        width: 520px;
+    }
+
 }
 
 @media (max-width: 570px) {
@@ -681,6 +838,11 @@ button {
     .steps__list {
         gap: 35px 25px;
     }
+  
+     .certificates__img {
+        width: 200px;
+    }
+  
 }
 
 @media (max-width: 480px) {
@@ -746,6 +908,13 @@ button {
     .steps__item-text {
         padding-bottom: 25px;
     }
+      .certificates__img{
+        width: 165px;
+    }
+
+    .certificates__slider{
+        width: 430px;
+    }
 }
 @media (max-width: 480px) {
     .course__title {
@@ -764,6 +933,9 @@ button {
         right: -14px;
         bottom: -13px;
     }
+    .swiper-pagination-bullet {
+width: 20px;
+}
 }
 
 @media (max-width: 360px) {
@@ -868,6 +1040,9 @@ button {
     }
     .team__name-descr {
         font-size: 10px;
+    }
+    .certificates__slider .swiper-wrapper{
+        padding-bottom: 20px;
     }
 }
 
