@@ -40,11 +40,13 @@ button {
     font-weight: 600;
     font-family: normal;
 }
+
 .text {
     font-family: 'Comfortaa';
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 1.5;
+    
 }
 
 .container {
@@ -340,6 +342,7 @@ button {
     right: -14px;
     bottom: -13px;
 }
+
 .team {
     background-color: #a5978e;
     padding-top: 61px;
@@ -347,6 +350,7 @@ button {
     margin-bottom: 150px;
     color: #fff;
 }
+
 .team__item {
     position: relative;
 }
@@ -369,30 +373,37 @@ button {
     box-sizing: content-box;
     z-index: 4;
 }
+
 .team__name {
     font-size: 12px;
     font-family: 'Yeseva One';
     letter-spacing: 1px;
 }
+
 .team__name-descr {
     font-size: 11px;
 }
+
 .rewiews__content {
     gap: 0;
     padding-left: 20px;
 }
+
 .rewiews__slider {
     width: 100%;
     height: auto;
     overflow: hidden;
 }
+
 .rewiews__video {
     display: flex;
     gap: 16px;
 }
+
 .rewiews__img-box {
     position: relative;
 }
+
 .rewiews__img {
     object-fit: cover;
     width: 380px;
@@ -409,17 +420,20 @@ button {
 .rewiews__video-content {
     padding: 60px 0 13px 0;
 }
+
 .rewiews__video-link {
     margin-bottom: 12px;
 }
+
 .rewiews__video-text {
     margin-top: 15px;
     margin-bottom: 37px;
     line-height: 1.2;
 }
+
 .rewiew__video-btn {
-    margin-left: 90px;
-    text-align: right;
+    text-align: left;
+    width: 125px;
 }
 .rewiews__content .swiper-pagination {
     bottom: 45px;
@@ -435,19 +449,100 @@ button {
 .certificates__content {
     gap: 0;
     padding-left: 20px;
-    
 }
+
 .certificates__slider {
     width: 875px;
     overflow: hidden;
 }
-.certificates__img{
+
+.certificates__img {
     width: 375px;
 }
 
 .certificates__content .swiper-pagination {
     bottom: 45px;
 }
+
+.promo{
+    background-image: url('../images/promo-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+}
+.promo__inner{
+    display: flex;
+    align-items: center;
+    
+}
+.promo__title{
+    color: #fff;
+    font-size: 40px;
+    margin-right: 109px;
+    padding-left: 56px;
+}
+.promo__btn{
+    width: 200px;
+}
+.contacts{
+    padding: 150px 0 50px;   
+}
+
+.contacts__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts__form{
+    background-color: #fff;
+    width: 664px;
+    padding: 67px 42px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    
+}
+
+.contacts__form-title{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.contacts__form-input{
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px #000 solid;
+    width: 100%;
+    display: block;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+}
+
+.contacts__form-input::placeholder{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contacts__btn{
+    margin-top: 36px;
+    width: 190px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -footer---------------------------- */
 .footer {
@@ -473,6 +568,7 @@ button {
     display: flex;
     gap: 15px;
 }
+
 /* -------------media------------------- */
 @media (max-width: 1000px) {
     .container {
@@ -529,26 +625,42 @@ button {
         max-width: 130px;
         max-height: 225px;
     }
+
     .team__info-box {
         bottom: -19px;
     }
+
     .rewiew__video-btn {
         padding: 15px;
-        margin-left: 0;
+
     }
+
     .rewiews__img {
         width: 270px;
         height: 320px;
     }
+
     .rewiews__video-content {
         padding-top: 10px;
         padding-bottom: 15px;
     }
+
     .certificates__slider {
         width: 650px;
     }
+
     .certificates__img {
         width: 280px;
+    }
+    .promo__title{
+        margin-right: 50px;
+    }
+    .contacts__img{
+        width: 335px;
+    }
+    .contacts__form{
+        width: 592px;
+        margin-right: 30px;
     }
 }
 
@@ -573,6 +685,7 @@ button {
     .product__item-img {
         width: 100%;
     }
+
     .course__title {
         padding: 15px 10px;
         top: 40%;
@@ -584,31 +697,41 @@ button {
         right: -14px;
         bottom: -13px;
     }
+
     .team__content {
         gap: 25px 70px;
     }
+    .promo__btn, .rewiew__video-btn{
+    padding: 14px 44px;
+    
 }
+}
+
 @media (max-width: 800px) {
     .rewiew__video-btn {
         padding: 15px;
-        margin-left: 0;
     }
+
     .rewiews__img {
         width: 270px;
         height: 320px;
     }
+
     .rewiews__video-content {
         padding-top: 10px;
         padding-bottom: 15px;
     }
+
     .certificates__slider {
         width: 575px;
     }
+
     .certificates__img {
         width: 250px;
     }
-    .swiper-pagination-bullet{
-       width: 30px;
+
+    .swiper-pagination-bullet {
+        width: 30px;
     }
 }
 
@@ -620,7 +743,8 @@ button {
     .container {
         padding: 0 10px;
     }
-    .section{
+
+    .section {
         padding-bottom: 80px;
     }
 
@@ -631,8 +755,8 @@ button {
         top: -2px;
         background-size: cover;
     }
- 
-    .top{
+
+    .top {
         padding-bottom: 80px;
     }
 
@@ -652,7 +776,8 @@ button {
     .top__img {
         left: 180px;
     }
-    .about{
+
+    .about {
         margin-bottom: 80px;
     }
 
@@ -719,55 +844,76 @@ button {
         max-width: 85px;
         max-height: 150px;
     }
-    .team{
+
+    .team {
         margin-bottom: 80px;
     }
-    .team__content{
+
+    .team__content {
         padding-bottom: 0;
     }
+
     .team__name {
         font-size: 8px;
     }
+
     .team__name-descr {
         font-size: 7px;
     }
+
     .team__info-box {
         padding: 10px 15px 11px;
         width: 50%;
         height: 30%;
         right: -20px;
     }
+
     .team__img {
         width: 143px;
         height: 155px;
     }
+
     .rewiews__img {
         width: 200px;
         height: 200px;
     }
+
     .rewiews__video-content {
         padding-top: 10px;
         padding-bottom: 15px;
     }
+
     .rewiews__content {
         padding-bottom: 50px;
     }
+
     .rewiew__video-btn {
         padding: 10px;
         font-size: 11px;
     }
+
     .rewiews__video-text {
         font-size: 11px;
         margin-bottom: 15px;
     }
+
     .rewiews__img-box a img {
         width: 45px;
     }
+
     .certificates__img {
         width: 200px;
     }
-    .certificates__slider{
+
+    .certificates__slider {
         width: 520px;
+    }
+      .contacts__img{
+        width: 287px;
+    }
+    .contacts__form{
+        width: 440px;
+        margin-right: 15px;
     }
 
 }
@@ -838,11 +984,21 @@ button {
     .steps__list {
         gap: 35px 25px;
     }
-  
-     .certificates__img {
+
+    .certificates__img {
         width: 200px;
     }
-  
+    .promo__btn, .rewiew__video-btn{
+   width: 100px;
+   padding: 10px 34px;   
+}
+.contacts__img{
+    display: none;
+}
+.contacts__form{
+    width: 100%;
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 480px) {
@@ -908,14 +1064,23 @@ button {
     .steps__item-text {
         padding-bottom: 25px;
     }
-      .certificates__img{
+
+    .certificates__img {
         width: 165px;
     }
 
-    .certificates__slider{
+    .certificates__slider {
         width: 430px;
     }
+    .promo__title{
+        padding-left: 0;
+        margin-right: 20px;
+    }
+    .contacts{
+        padding-top: 80px;
+    }
 }
+
 @media (max-width: 480px) {
     .course__title {
         padding: 10px;
@@ -933,9 +1098,10 @@ button {
         right: -14px;
         bottom: -13px;
     }
+
     .swiper-pagination-bullet {
-width: 20px;
-}
+        width: 20px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -986,6 +1152,7 @@ width: 20px;
     .section__text {
         font-size: 8px;
     }
+
     .section__courses {
         grid-template-columns: auto;
     }
@@ -1008,9 +1175,11 @@ width: 20px;
         max-width: 66px;
         max-height: 100px;
     }
+
     .product__item {
         max-width: 100%;
     }
+
     .course__title {
         padding: 15px 10px;
         top: 45%;
@@ -1024,9 +1193,11 @@ width: 20px;
     .course__price {
         padding: 19px 10px;
     }
+
     .team__content {
         grid-template-columns: auto;
     }
+
     .team__item {
         display: flex;
     }
@@ -1035,13 +1206,16 @@ width: 20px;
         width: 205px;
         height: 220px;
     }
+
     .team__name {
         font-size: 11px;
     }
+
     .team__name-descr {
         font-size: 10px;
     }
-    .certificates__slider .swiper-wrapper{
+
+    .certificates__slider .swiper-wrapper {
         padding-bottom: 20px;
     }
 }
